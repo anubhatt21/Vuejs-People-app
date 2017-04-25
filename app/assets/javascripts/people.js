@@ -9,6 +9,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         {name: "Anu", bio: "An introvert amateur coder, artist, wife, dog person, cocktail-lover, self professed clumsy dancer",bioVisible: false},
         {name: "Aditya", bio: "He is a charmer !", bioVisible: false}
       ],
+
+      newPersonName: "",
+      newPersonBio: ""
     },
       
     methods: {
@@ -19,8 +22,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         //   inputPerson.bioVisible = true;
         // }
         inputPerson.bioVisible = !inputPerson.bioVisible;
+      },
 
-      }
+      addPerson: function() {
+        this.people.push({name: this.newPersonName, bio: this.newPersonBio, bioVisible: false});
+        this.newPersonName = "";
+        this.newPersonBio = "";
+
+      },
     },
     
   });
