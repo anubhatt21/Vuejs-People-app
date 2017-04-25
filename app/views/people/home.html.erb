@@ -1,0 +1,14 @@
+<h1> Welcome to the Interesting People Page!! </h1>
+<div id="app">
+  <div v-for="person in people">
+  <h3> {{ person.name }} </h3>
+  <p> {{ person.bio }} </p>
+  
+  <ol> 
+    <li v-for="person in people" v-if="!bioVisible" v-on:click="bioVisible = !bioVisible"> Name: {{person.name }} </li>
+    
+  </ol>
+  </h4> 
+</div>
+
+
