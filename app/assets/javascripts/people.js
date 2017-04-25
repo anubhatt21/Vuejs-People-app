@@ -30,6 +30,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         this.newPersonBio = "";
 
       },
+
+      deletePerson(inputPerson) {
+        var index = this.people.indexOf(inputPerson);
+        this.people.splice(index, 1);
+      }
     },
     
   });

@@ -12,7 +12,10 @@
   <div v-for="person in people">
     <h4 v-on:click="toggleBio(person)"> Name : {{ person.name }} </h4>
      <p v-if="person.bioVisible"> Bio: {{ person.bio }} </p>
+     <button v-on:click="deletePerson(person)"> Delete </button>
   </div>
+
+
 </div>
 
 
