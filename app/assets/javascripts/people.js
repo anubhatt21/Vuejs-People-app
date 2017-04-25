@@ -9,8 +9,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
         {name: "Anu", bio: "An introvert amateur coder, artist, wife, dog person, cocktail-lover, self professed clumsy dancer",bioVisible: false},
         {name: "Aditya", bio: "He is a charmer !", bioVisible: false}
       ],
-      
-
     },
+      
+    methods: {
+      toggleBio: function(inputPerson) {
+        // if (inputPerson.bioVisible === true) {
+        //   inputPerson.bioVisible = false;
+        // } else {
+        //   inputPerson.bioVisible = true;
+        // }
+        inputPerson.bioVisible = !inputPerson.bioVisible;
+
+      }
+    },
+    
   });
 });
