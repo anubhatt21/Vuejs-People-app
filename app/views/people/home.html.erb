@@ -7,6 +7,8 @@
     <button v-on:click="addPerson()"> Add Person </button>
   </div>
 
+  <h4> Total number of people: {{ people.length }} </h4>
+
   <div v-for="person in people">
     <h4 v-on:click="toggleBio(person)"> Name : {{ person.name }} </h4>
      <p v-if="person.bioVisible"> Bio: {{ person.bio }} </p>
